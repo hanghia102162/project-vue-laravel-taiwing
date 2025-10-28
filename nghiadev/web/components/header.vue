@@ -4,7 +4,7 @@ import Search from './icon/Search.vue'
 import ShowLogin from './icon/showLogin.vue'
 import ShowRegister from './icon/showRegister.vue'
 
-import { useRouter } from 'vue-router' // import router điều hướng 
+import { routerKey, useRouter } from 'vue-router' // import router điều hướng 
 
 
 const router = useRouter()   // 👈 tạo đối tượng router để điều hướng
@@ -15,6 +15,7 @@ const Register = ref(false)
 // 👇 dùng router.push() để chuyển trang
 const gotoHome = () => router.push('/')
 const gotoLotrinh = () => router.push('/lotrinh')
+const gotobaiviet = () => router.push('/baiviet')
 </script>
 
 <template>
@@ -86,8 +87,9 @@ const gotoLotrinh = () => router.push('/lotrinh')
            hover:border hover:border-[#312b2b]
            hover:shadow-[0_0_25px_#494242]
            hover:bg-[#686666] hover:text-white
-           hover:rounded-[25px] cursor-pointer"> 
-        <button><ion-icon name="chatbox-ellipses-outline"></ion-icon></button>
+           hover:rounded-[25px] cursor-pointer"
+           @click="gotobaiviet"> 
+        <button @click="gotobaiviet"><ion-icon name="chatbox-ellipses-outline"></ion-icon></button>
         <h6 class="text-xs">Bài Viết</h6>
       </div>
      </div>
