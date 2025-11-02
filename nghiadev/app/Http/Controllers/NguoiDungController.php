@@ -5,9 +5,23 @@ namespace App\Http\Controllers;
 use App\Models\NguoiDung;
 use App\Http\Requests\StoreNguoiDungRequest;
 use App\Http\Requests\UpdateNguoiDungRequest;
-
+use Illuminate\Http\Request;
 class NguoiDungController extends Controller
 {
+    //  public function login(Request $request)
+    // {
+    //     $user = NguoiDung::where('email', $request->email)->first();
+
+    //     if (!$user || !Hash::check($request->password, $user->password)) {
+    //         return response()->json(['message' => 'Email hoặc mật khẩu không đúng'], 401);
+    //     }
+
+    //     return response()->json([
+    //         'message' => 'Đăng nhập thành công',
+    //         'user' => $user
+    //     ]);
+    // }
+
     /**
      * Display a listing of the resource.
      */

@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('nguoi_dungs', function (Blueprint $table) {
             $table->id();
             $table->String('fullname',100);
-            $table->String('email',150);
+            $table->String('email',150)->unique();
             $table->String('password',255);
-            $table->string('avatar',255);
+            $table->string('avatar',255)->nullable();
             $table->enum('role', ['user', 'admin'])->default('user');
             $table->timestamps();
         });

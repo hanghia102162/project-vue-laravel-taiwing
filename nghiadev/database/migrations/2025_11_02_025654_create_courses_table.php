@@ -11,16 +11,18 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('posts', function (Blueprint $table) {
+        Schema::create('courses', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')
+            $table->foreign('user_id')
                   ->constrained('nguoi_dungs')
                   ->onDelete('cascade');
-            $table->String('title',255)->unique();
-            $table->string('slug', 255)->unique();
-            $table->string('thumbnail', 255)->nullable();
-            $table->text('content');
-            $table->enum('status', ['draft', 'published'])->default('draft');
+            $table->String('title');
+            $table->string('slug')->unique();
+            $table->text('description')->nullable();
+            $table->string('thumbnail')->nullable();
+            $table->enum('level', ['beginner', 'intermediate', 'advanced'])
+                  ->default('beginner');
+            $table->decimal('price', 10, 2)->default(0);
             $table->timestamps();
         });
     }
@@ -30,6 +32,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('posts');
+        Schema::dropIfExists('courses');
     }
 };
