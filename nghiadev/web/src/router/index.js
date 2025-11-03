@@ -3,12 +3,15 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Giaodien1 from '@/view/giaodien1.vue'
 import Lotrinh from '@/view/Lotrinh.vue'
 import baiviet from '@/view/baiviet.vue'
+import FontEnd from '@/view/FontEnd.vue'
+import BackEnd from '@/view/BackEnd.vue'
 
 const routes = [
   { path: '/', name: 'Home', component: Giaodien1 },
   { path: '/lotrinh', name: 'Lotrinh', component: Lotrinh },
   { path: '/baiviet', name: 'baiviet', component: baiviet },
-  
+  { path: '/fontend', name: 'FontEnd', component: FontEnd },
+  { path: '/backend', name: 'BackEnd', component: BackEnd },
 ]
 
 const router = createRouter({
