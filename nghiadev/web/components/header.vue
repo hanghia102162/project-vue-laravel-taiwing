@@ -15,6 +15,7 @@ const Register = ref(false)
 const gotoHome = () => router.push('/')
 const gotoLotrinh = () => router.push('/lotrinh')
 const gotobaiviet = () => router.push('/baiviet')
+const gotointpdurece = () => router.push('/introduce')
 </script>
 
 <template>
@@ -90,6 +91,7 @@ const gotobaiviet = () => router.push('/baiviet')
       <!--  -->
       <div
         class="w-[60px] h-[50px] m-[35px] flex justify-center items-center transition-all ease-in-out duration-500 pointer-events-auto hover:scale-110 hover:-translate-y-[5px] hover:border hover:border-[#312b2b] hover:shadow-[0_0_25px_#494242] hover:bg-[#686666] hover:text-white hover:rounded-[25px] cursor-pointer"
+        @click="gotointpdurece"
       >
         <button><ion-icon name="volume-high-outline"></ion-icon></button>
       </div>
