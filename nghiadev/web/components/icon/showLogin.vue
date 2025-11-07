@@ -14,6 +14,7 @@
         <input
           type="text"
           id="name"
+          v-model="name"
           required
           placeholder=" "
           class="peer pr-10 w-full h-[30px] bg-transparent outline-none"
@@ -30,6 +31,7 @@
         <input
           type="Password"
           id="Password"
+          v-model="password"
           required
           placeholder=" "
           class="peer w-full h-[30px] bg-transparent outline-none"
@@ -74,11 +76,15 @@ const emit = defineEmits(['close', 'loggedIn'])
 // // hàm đăng nhập
 // const handleLogin = async () => {
 //   try {
-//     const res = await axios.post('http://127.0.0.1:8000/api/login', {
-//       // email: name.value, // dùng ":" thay vì "="
-//       // password: password.value,
-//       email: 'test@example.com',
-//       password: '123456',
+//     axios.defaults.withCredentials = true
+
+//     await axios.get('http://127.0.0.1:8000/sanctum/csrf-cookie')
+
+//     const res = await axios.post('http://127.0.0.1:8000/login', {
+//       email: name.value, // dùng ":" thay vì "="
+//       password: password.value,
+//       // email: 'test@example.com',
+//       // password: '123456',
 //     })
 
 //     console.log('Login success:', res.data)

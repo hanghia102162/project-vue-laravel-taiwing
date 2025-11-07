@@ -249,7 +249,7 @@
           class="absolute left-1/2 top-0 h-full w-[3px] bg-red-500 transform -translate-x-1/2"
         ></div>
         <!-- 1️⃣ Trái -->
-        <div class="flex justify-between items-center w-full mb-8">
+        <div class="flex justify-between items-center w-full mb-8" data-aos="fade-left">
           <div class="w-[45%] bg-red-500 text-black p-4 rounded-md relative">
             <h3 class="font-bold text-lg">Năm nhất</h3>
             <p>Chả làm được cái đầu buồi gì ngoài ăn bám</p>
@@ -268,7 +268,7 @@
           <div class="w-[45%]"></div>
         </div>
         <!-- 2️⃣ Phải -->
-        <div class="flex justify-between items-center w-full mb-8">
+        <div class="flex justify-between items-center w-full mb-8" data-aos="fade-right">
           <div class="w-[45%]"></div>
 
           <div
@@ -286,7 +286,7 @@
           </div>
         </div>
         <!-- 1️⃣ Trái -->
-        <div class="flex justify-between items-center w-full mb-8">
+        <div class="flex justify-between items-center w-full mb-8" data-aos="fade-left">
           <div class="w-[45%] bg-red-500 text-black p-4 rounded-md relative">
             <h3 class="font-bold text-lg">Năm 3</h3>
             <p>
@@ -308,7 +308,7 @@
           <div class="w-[45%]"></div>
         </div>
         <!-- 2️⃣ Phải -->
-        <div class="flex justify-between items-center w-full mb-8">
+        <div class="flex justify-between items-center w-full mb-8" data-aos="fade-right">
           <div class="w-[45%]"></div>
 
           <div
@@ -325,7 +325,8 @@
             ></div>
           </div>
         </div>
-        <div class="flex justify-between items-center w-full mb-8">
+        <!-- trai -->
+        <div class="flex justify-between items-center w-full mb-8" data-aos="fade-left">
           <div class="w-[45%] bg-red-500 text-black p-4 rounded-md relative">
             <h3 class="font-bold text-lg">High School</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid consequuntur.</p>
@@ -344,7 +345,7 @@
           <div class="w-[45%]"></div>
         </div>
         <!-- 2️⃣ Phải -->
-        <div class="flex justify-between items-center w-full mb-8">
+        <div class="flex justify-between items-center w-full mb-8" data-aos="fade-right">
           <div class="w-[45%]"></div>
 
           <div
